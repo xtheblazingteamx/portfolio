@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Lachlan — About Me</title>
+  <meta name="description" content="A bit about Lachlan — what he's studying, his interests, and how he got into computer hardware.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- nav bar, same on every page -->
+  <header class="siteHeader">
+    <nav class="navBar" aria-label="Primary">
+      <a href="index.html" class="logo">Lachlan<span>.</span></a>
+      <button class="navToggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About Me</a></li>
+        <li><a href="setup.html">My Setup</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pageIntro container">
+      <span class="tag">// about me</span>
+      <h1>A bit about me</h1>
+    </section>
+
+    <section class="section container">
+      <div class="aboutGrid">
+        <div class="profileCard">
+          <div class="avatar" aria-hidden="true">L</div>
+          <h3>Lachlan</h3>
+          <p>Student &amp; hardware enthusiast</p>
+          <div class="skillTags">
+            <span>PC building</span>
+            <span>HTML/CSS/JS</span>
+            <span>I.T Support</span>
+          </div>
+        </div>
+
+        <div class="infoBlocks">
+          <div class="infoBlock">
+            <h3>Who I am</h3>
+            <p>I'm currently studying the BCS Computer Sciences Degree. Outside of class, I spend a lot of time learning about computer hardware and Improving my I.T skills.</p>
+          </div>
+
+          <div class="accordion">
+            <!-- dropdown sections -->
+            <div class="accordionItem">
+              <button class="accordionTrigger" aria-expanded="false" aria-controls="panelStudy">
+                <span>What I'm studying</span>
+                <span class="plus">+</span>
+              </button>
+              <div class="accordionPanel" id="panelStudy" data-open="false">
+                <p>I'm studying the BCS Computer Sciences Degree.</p>
+              </div>
+            </div>
+            <div class="accordionItem">
+              <button class="accordionTrigger" aria-expanded="false" aria-controls="panelHardware">
+                <span>How I got into hardware</span>
+                <span class="plus">+</span>
+              </button>
+              <div class="accordionPanel" id="panelHardware" data-open="false">
+                <p>It started in primary school when I was handed a old Pc that I wanted to dismantle and get it running again. Ever since, I've been fascinated by how computers function and the endless possibilities for customization and improvement.</p>
+              </div>
+            </div>
+            <div class="accordionItem">
+              <button class="accordionTrigger" aria-expanded="false" aria-controls="panelInterests">
+                <span>Other interests</span>
+                <span class="plus">+</span>
+              </button>
+              <div class="accordionPanel" id="panelInterests" data-open="false">
+                <p>When I'm not tinkering with hardware, I'm usually gaming, or reading up on new component releases.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-label="Next step">
+      <div class="card">
+        <h3>Curious about the hardware side?</h3>
+        <p>Take a look at my actual Pc setup — full specs.</p>
+        <a href="setup.html" class="btnPrimary">View my setup</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer, same on every page -->
+  <footer class="siteFooter">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="footerBrand">
+          <a href="index.html" class="logo">Lachlan<span>.</span></a>
+          <p>A personal portfolio built around my interests in hardware and my obsession with anything tech-related.</p>
+        </div>
+        <div class="footerCol">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="setup.html">My Setup</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footerCol">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="mailto:Niethelachlan@gmail.com">Email</a></li>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://discord.gg/">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <span>&copy; 2026 Lachlan Bailey Niethe.</span>
+        <a href="contact.html">Get in touch →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
