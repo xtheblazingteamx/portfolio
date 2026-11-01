@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Lachlan — Contact</title>
+  <meta name="description" content="Get in touch with Lachlan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="siteHeader">
+    <nav class="navBar" aria-label="Primary">
+      <a href="index.html" class="logo">Lachlan<span>.</span></a>
+      <button class="navToggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="setup.html">My Setup</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pageIntro container">
+      <span class="tag">// contact</span>
+      <h1>Get in touch</h1>
+      <p>Got a question, or just want to talk hardware? Send me a message or find me on socials.</p>
+    </section>
+
+    <section class="section container">
+      <div class="contactGrid">
+        <form class="contactForm" novalidate>
+          <div class="formField">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" data-required>
+            <p class="errorMsg">Please enter your name.</p>
+          </div>
+          <div class="formField">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" data-required>
+            <p class="errorMsg">Please enter a valid email address.</p>
+          </div>
+          <div class="formField">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" data-required></textarea>
+            <p class="errorMsg">Please enter a message.</p>
+          </div>
+          <button type="submit" class="submitBtn">Send message</button>
+          <p class="formStatus" data-visible="false" role="status"></p>
+        </form>
+
+        <div class="directContact">
+          <div class="contactCard">
+            <h3>Email</h3>
+            <a href="mailto:Niethelachlan@gmail.com">Niethelachlan@gmail.com</a>
+          </div>
+          <div class="contactCard">
+            <h3>GitHub</h3>
+            <a href="https://github.com/">github.com/lachlan</a>
+          </div>
+          <div class="contactCard">
+            <h3>Discord</h3>
+            <a href="https://discord.gg/">discord.gg</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="footerBrand">
+          <a href="index.html" class="logo">Lachlan<span>.</span></a>
+          <p>A personal portfolio built around PC builds, and my obsession with hardware.</p>
+        </div>
+        <div class="footerCol">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="setup.html">My Setup</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footerCol">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="mailto:Niethelachlan@gmail.com">Email</a></li>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://discord.gg/">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <span>&copy; 2026 Lachlan Bailey Niethe.</span>
+        <a href="contact.html">Get in touch →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
